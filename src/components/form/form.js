@@ -1,14 +1,25 @@
+import RadioButton from "../radio-buttons/radio-buttons";
+
 function BootstrapForm() {
+  const cursos = [
+    "Técnico em Computação Gráfica",
+    "Técnico em Informática",
+    "Técnico em Administração",
+    "Técnico em Informática para a Internet",
+  ];
+
   return (
     <form action="">
-      <img
-        src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
-        class="mb-4"
-        height="57"
-        width="72"
-        alt=""
-      />
-      <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+      <div class="d-flex flex-row align-items-center gap-2">
+        <img
+          src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+          class="mb-4"
+          height="57"
+          width="72"
+          alt=""
+        />
+        <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+      </div>
       <div class="form-floating mb-2">
         <input
           type="email"
@@ -35,6 +46,10 @@ function BootstrapForm() {
           Remember Me
         </label>
       </div>
+      <h1 class="h3 mb-3 fw-normal">Please Select a course</h1>
+      {cursos.map((curso) => {
+        return <RadioButton curso={curso} />;
+      })}
       <button class="btn btn-primary w-100 py-2">Sing in</button>
     </form>
   );
