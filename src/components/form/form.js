@@ -1,4 +1,4 @@
-function MyForm() {
+function BootstrapForm() {
   return (
     <form action="">
       <img
@@ -40,4 +40,4 @@ function MyForm() {
   );
 }
 
-export default MyForm;
+export default BootstrapForm;

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import FormBootStrap from "../components/form-bootstrap/form-bootstrap";
-import MyForm from "../components/form/form";
+import ReactBootStrapForm from "../components/form-bootstrap/form-bootstrap";
+import BootstrapForm from "../components/form/form";
 import SwitchForm from "../components/switche/switch-form";
 import SwitchMode from "../components/switche/switch-theme";
 import "./home.css";
@@ -21,7 +21,7 @@ function Home() {
       </header>
 
       <main className="w-100 m-auto form-container">
-        {checkForm ? <MyForm/> : <FormBootStrap />}
+        {checkForm ? <BootstrapForm/> : <ReactBootStrapForm />}
         <div className="mt-5 mb-3">@ Henrique Neto 2024 (with React)</div>
       </main>
     </div>

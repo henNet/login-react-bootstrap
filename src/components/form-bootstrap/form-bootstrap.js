@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-function FormBootStrap() {
+function ReactBootStrapForm() {
   return (
     <>
       <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
@@ -26,4 +26,4 @@ function FormBootStrap() {
   );
 }
 
-export default FormBootStrap;
+export default ReactBootStrapForm;
