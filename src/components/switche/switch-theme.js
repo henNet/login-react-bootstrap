@@ -17,7 +17,7 @@ function SwitchMode() {
   function mode(){
     var label = document.querySelector("#switche");
 
-    if(label.textContent.trim() == "Dark"){
+    if(label.textContent.trim() === "Dark"){
         modeLight();
         setCheck(false);
         label.innerHTML = "Light";
